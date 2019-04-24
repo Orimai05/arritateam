@@ -8,7 +8,7 @@
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="expires" content="0">
 
-	<title>ログイン</title>
+	<title>マイページログイン</title>
 
 	<meta name="format-detection" content="telephone=no">
 
@@ -30,25 +30,24 @@
 
 <header>
 	<div class="container">
-		<h1 class="logo"><img src="./public/images/logo_002.png" alt=""></h1>
-		<div class="hd_right" style="margin-top:-10px">
 		<h1 class="logo"><img src="./public/images/header_logo.png" alt=""></h1>
-		</div>
 	</div>
 </header>
 
-<div id="Wrapper">
+<div id="Wrapper" style="background-color:#3c8dbc">
 <div class="container">
 
 
-<div id="Contents">
+<div id="Contents" style="background-color:#ecf0f5">
 
-<div class="article">
-<div class="icon"><h2 class="rd25_right"><img src="./public/images/icon_011.png" alt="">ログイン</h2></div>
+<div class="article" style="background-color:#ecf0f5">
+<div class="icon"><h2 class="rd25_right"><img src="./public/images/icon_011.png" alt="">マイページログイン</h2></div>
 
 
 <div class="gray_waku">
-<p class="mgnb20">ご登録いただいたログインIDとパスワードを入力して、「ログイン」ボタンを押してください。<br>※ログイン後、90分間画面を操作されなかった場合、セキュリティのため自動的にログアウトさせていただきます。</p>
+<p class="mgnb20">ログインIDとパスワードを入力して、「ログイン」ボタンを押してください。<br>
+	<a href="javascript: void(0);" class="mod_link01 arrow01 underline" target="_blank" >ログインID、パスワードを忘れた方はこちら</a>
+</p>
 
 <form method="POST" action="" accept-charset="UTF-8">
 
@@ -67,8 +66,7 @@
 				<tr>
 					<th>ログインID</th>
 					<td class="js-td1" style="">
-						<input id="loginId" name="loginId" type="text" maxlength="20" class="w228" tabindex="1" >
-						<a href="javascript: void(0);" class="mod_link01 arrow01 underline" target="_blank" >ログインID、パスワードを忘れた方はこちら</a>
+						<input id="loginId" name="loginId" type="text" maxlength="20" class="w228" tabindex="1" placeholder="seimei_loginid">
 						<p class="bld orange error_icon error_message">
 							<span style="display: none;"></span>
 						</p>
@@ -78,7 +76,7 @@
 				<tr class="last">
 					<th>パスワード</th>
 					<td class="js-td2">
-						<input id="password" name="password" autocomplete="off" maxlength="32" class="w228" tabindex="2" type="password" >
+						<input id="password" name="password" autocomplete="off" maxlength="32" class="w228" tabindex="2" type="password" placeholder="●●●●●●●●●●">
 						<p class="bld orange error_icon error_message">
 							<span style="display: none;"></span>
 						</p>
@@ -88,8 +86,7 @@
 		</table>
 	</div>
 
-<!-- <div class="check bg_orange rd21"><a href="javascript: void(0);" class="btn btn-warning btn-lg wd30p" tabindex="3" >ログイン</a></div> -->
-<div class="check bg_orange rd21"><a href="./starter.html" class="btn btn-warning btn-lg wd30p" tabindex="3" >ログイン</a></div>
+<div class="check bg_orange rd21" style="background-color:aliceblue;"><a href="./home.html" class="btn btn-warning btn-lg wd30p" tabindex="3" style="background-color:#3c8dbc; border-color:#3c8dbc;">ログイン</a></div>
 
 </form>
 </div>
@@ -102,27 +99,16 @@
 </div>
 </div>
 
-<footer>
-<div class="container">
-<ul>
-<li><span>|</span>　<a href="" target="_blank" class="nonpop">勧誘方針</a><span>|</span></li>
-<li><a href="" target="_blank" class="nonpop">プライバシー・ポリシー</a><span>|</span></li>
-<li><a href="http://www.orixlife.co.jp/about/governance/policy/site_policy.html" target="_blank" class="nonpop">サイトポリシー</a><span>|</span></li>
-<li><a href="http://www.orixlife.co.jp/about/governance/policy/security.html" target="_blank" class="nonpop">セキュリティについて</a><span>|</span></li>
-<li><a href="javascript: void(0);" class="nonpop helpAcceptableUsePolicy" >利用規約</a><span>|</span></li>
-</ul>
-<p>Copyright © ARIX Life Insurance Corporation. All rights reserved.</p>
-</div>
-</footer>
+
 
 </div>
 
 
-<script type="text/javascript" src="./public/js/jquery-1.11.1.min.js.ダウンロード"></script>
-<script type="text/javascript" src="./public/js/jquery.corner.js.ダウンロード"></script>
-<script type="text/javascript" src="./public/js/jquery.colorbox.js.ダウンロード"></script>
-<script type="text/javascript" src="./public/js/jquery.plainoverlay.js.ダウンロード"></script>
-<script type="text/javascript" src="./public/js/native.history.js.ダウンロード"></script>
-<script type="text/javascript" src="./public/js/jquery-supertextconverter-plugin.js.ダウンロード"></script>
+<script type="text/javascript" src="./public/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./public/js/jquery.corner.js"></script>
+<script type="text/javascript" src="./public/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="./public/js/jquery.plainoverlay.js"></script>
+<script type="text/javascript" src="./public/js/native.history.js"></script>
+<script type="text/javascript" src="./public/js/jquery-supertextconverter-plugin.js"></script>
 
 
