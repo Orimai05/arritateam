@@ -15,10 +15,8 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
   <!-- Main Header -->
   <header class="main-header">
-
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <span class="logo-mini"><b>A</b>LT</span>
@@ -265,10 +263,10 @@
   <!-- 画像 -->
   <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="info-box">
-      <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+      <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt=""></span>
 
       <div class="info-box-content">
-        <span class="info-box-text">死亡</span>
+        <span class="info-box-text">通院</span>
         <span class="info-box-number">1,410</span>
       </div>
     </div>
@@ -358,7 +356,24 @@
         </div>
   </div>
 </div>
+<!-- グラフ -->
+<div class="box box-info">
+    <div class="box-header with-border">
+      <h3 class="box-title">Line Chart</h3>
 
+      <div class="box-tools pull-right">
+        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+        </button>
+        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+      </div>
+    </div>
+    <div class="box-body">
+      <div class="chart">
+        <canvas id="lineChart" style="height: 155px; width: 340px;" width="510" height="232"></canvas>
+      </div>
+    </div>
+    <!-- /.box-body -->
+  </div>
 <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
 
     </section>
@@ -476,5 +491,8 @@ tr.backgroung_color {
 }
 .table_border_radius tr:last-child td {
   border-bottom: none;
+}
+img {
+    height: 88px;
 }
 </style>
