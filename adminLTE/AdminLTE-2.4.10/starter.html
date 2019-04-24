@@ -22,7 +22,7 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <span class="logo-mini"><b>A</b>LT</span>
-      <span class="logo-lg"><b>Aritter</b>保険マイページ</span>
+      <span class="logo-lg"><b>Arriter</b>保険マイページ</span>
     </a>
 
     <!-- Header Navbar -->
@@ -191,18 +191,29 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>マイページ</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>お得情報</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>保険商品登録</span></a></li>
+        <li><a href="#"><i class="fa fa-link"></i> <span>保険商品参照</span></a></li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>設定</span>
+          <a href="#"><i class="fa fa-link"></i> <span>保険見直し</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">ポートフォリオ簡単ナビ</a></li>
+            <li><a href="#">FP診断（有料会員のみ）</a></li>
           </ul>
+          <li class="treeview">
+              <a href="#"><i class="fa fa-link"></i> <span>一括手続き</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li><a href="#">保険料シミュレーション</a></li>
+                  <li><a href="#">資料請求</a></li>
+                  <li><a href="#">保全手続き</a></li>
+              </ul> 
         </li>
       </ul>
       <!-- /.sidebar-menu -->
@@ -216,7 +227,7 @@
     <section class="content-header">
       <h1>
         Aritter
-        <small>保険シュミレーション</small>
+        <small>保険一覧</small>
       </h1>
     </section>
 
@@ -238,30 +249,107 @@
         <br>
   
         <div>
-          <table class="table table-bordered table_border_radius">
-              <tr>あなたの加入保険</tr>
-              <tr class="backgroung_color">
-              <th>保険タイプ</th><th>社名</th><th>ペットネーム</th><th>保険料</th><th>支払い</th><th>保険期間</th>
+            <table class="table table-bordered table_border_radius">
+              <tr><b>有田さん</b>の加入保険</tr>
+              <tr class="backgroung_color"></tr>
+              <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
+              <!-- </tr> -->
+              <tr>
+              <td>医療</td><td>オリックス生命</td><td>新CURE  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                  詳細
+                </button>
+                <div class="modal fade" id="modal1" tabindex="-1"
+                      role="dialog" aria-labelledby="label1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                              <a href="#"><img src="Accordion.png" onclick="pop(this)"></a>
+                            画像を入れる
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </td><td>終身</td><td>終身</td><td>5,500 円（月払）</td>
+              <!-- </tr> -->
+              <tr>
+               <td>死亡</td><td>オリックス生命</td><td>RISE  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                  詳細
+                </button>
+                <div class="modal fade" id="modal1" tabindex="-1"
+                      role="dialog" aria-labelledby="label1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </td><td>65歳</td><td>終身</td><td>6,800  円（月払）</td>
+               </tr>
+              <tr>
+              <td>死亡</td><td>メディケア生命</td><td>メディフィット（定期）  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                  詳細
+                </button>
+                <div class="modal fade" id="modal1" tabindex="-1"
+                      role="dialog" aria-labelledby="label1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </td><td>60歳</td><td>60歳</td><td>3,275  円（月払）</td>
               </tr>
               <tr>
-              <td>医療</td><td>オリックス生命</td><td>新CURE</td><td>5500円（月払）</td><td>65歳</td><td>終身</td>
-              </tr>
+             <td>がん</td><td>アフラック</td><td>がん保険Days1  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                詳細
+              </button>
+              <div class="modal fade" id="modal1" tabindex="-1"
+                    role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </td><td>65歳</td><td>終身</td><td>2,800  円（月払）</td>
+             </tr>
+             <tr>
+             <td>死亡</td><td>第一生命</td><td>ジャスト  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                詳細
+              </button>
+              <div class="modal fade" id="modal1" tabindex="-1"
+                    role="dialog" aria-labelledby="label1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </td><td>55歳</td><td>55歳</td><td>7,600  円（月払）</td>
+             </tr>
+             
               <tr>
-              <td>死亡</td><td>メディケア生命</td><td>メディフィット（定期）</td><td>3275円（月払）</td><td>60歳</td><td>60歳</td>
-              </tr>
-              <tr>
-              <td colspan="3">合計保険料</td></td><td>8775円</td><td></td><td></td>
+              <td colspan="5"><b>合計保険料</b></td><td><b>25,975 円</b></td>
               </tr>
           </table>
+          <br>
+          <br>
           <table class="table table-bordered table_border_radius">
-            <tr>あなたの保障</tr>
-              <tr><th>死亡</th><td>1500万</td></tr>
-              <tr><th>入院（がん）</th><td>10000円（１日）</td></tr>        
-              <tr><th>入院（病気）</th><td>5000円（１日）</td></tr>         
+            <tr><b>有田さん</b>の保障</tr>
+            <tr>
+            <th>保障内容</th><th>保険金（給付金）</th>
+            </tr>
+            <tr>
+              <tr><th>死亡</th><td>1500 万</td></tr>
+              <tr><th>入院（がん）</th><td>10,000 円（１日）</td></tr>        
+              <tr><th>入院（病気）</th><td>5,000 円（１日）</td></tr>         
               <tr><th>手術</th><td>20万（1回）</td></tr>
           </table>    
       </div>
-
   <!-- 画像 -->
   <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="info-box">
