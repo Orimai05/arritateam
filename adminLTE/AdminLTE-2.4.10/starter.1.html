@@ -213,6 +213,7 @@
                   <li><a href="#">保全手続き</a></li>
               </ul> 
         </li>
+        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>ご家族登録</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -224,8 +225,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Ariiter
-        <small>保険一覧</small>
+          保険商品参照
+        <small></small>
       </h1>
     </section>
 
@@ -235,25 +236,31 @@
         | Your Page Content Here |
         -------------------------->
         <table class="">
+            <tr class="bg_color">
+                <td><b>ご家族</b></td>
+              </tr>
           <tr>
-            <td>契約者</td> <td>有田</td> <td>夫</td>
-          </tr>
-        
-          <tr>
-            <td>被保険者</td> <td>有田</td> <td>妻</td>
-          </tr>
+              <td><img src="./public/images/man.png" alt="写真"  width="30" height="30"></td><td>有田 </td><td>真澄　</td> <td> 30歳　　</td>
+          <!-- </tr> -->
+          <!-- <tr> -->
+              <td><img src="./public/images/women.png" alt="写真"  width="30" height="30"></td><td>有田 </td> <td>花子　</td> <td> 28歳　　</td>
+          <!-- </tr>
+          <tr> -->
+              <td><img src="./public/images/child.png" alt="写真"  width="30" height="30"></td> <td>有田 </td> <td>一郎　</td> <td> 5歳</td>
+           </tr>
         </table>  
         <br>
         <br>
   
         <div>
             <table class="table table-bordered table_border_radius">
-              <tr><b>有田さん</b>の加入保険</tr>
+              <tr><b>有田　真澄さん</b>の加入保険（被保険者）</tr>
+              <br>
               <tr class="backgroung_color">
               <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
               </tr>
               <tr>
-              <td>医療</td><td>オリックス生命</td><td>新キュア・レディ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+              <td>医療</td><td>オリックス生命</td><td>新キュア　<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
                   詳細
                 </button>
                 <div class="modal fade" id="modal1" tabindex="-1"
@@ -261,7 +268,7 @@
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                              <span class="info-box-icon bg-aqua"><img src="./public/images/Accordion.png" alt="写真"  width="300" height="300"></span>
+                              <img src="./public/images/Accordion.png" alt="写真"  width="700" height="700"></span>
                           </div>
                         </div>
                   </div>
@@ -281,7 +288,7 @@
                         </div>
                   </div>
                 </div>
-              </td><td>65歳</td><td>終身</td><td>6,800  円（月払）</td>
+              </td><td>65歳</td><td>65歳払</td><td>6,800  円（月払）</td>
                </tr>
               <tr>
               <td>死亡</td><td>メディケア生命</td><td>メディフィット（定期）  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
@@ -296,7 +303,7 @@
                         </div>
                   </div>
                 </div>
-              </td><td>60歳</td><td>60歳</td><td>3,275  円（月払）</td>
+              </td><td>60歳</td><td>60歳払</td><td>3,275  円（月払）</td>
               </tr>
               <tr>
              <td>がん</td><td>アフラック</td><td>がん保険Days1  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
@@ -326,13 +333,82 @@
                       </div>
                 </div>
               </div>
-            </td><td>55歳</td><td>55歳</td><td>7,600  円（月払）</td>
+            </td><td>55歳</td><td>55歳払</td><td>7,600  円（月払）</td>
              </tr>
              
               <tr>
               <td colspan="5"><b>合計保険料</b></td><td><b>25,975 円</b></td>
               </tr>
           </table>
+          <!-- <花子さんの保険＞ -->
+          <table class="table table-bordered table_border_radius">
+              <tr><b>有田 花子さん</b>の加入保険（被保険者）</tr>
+              <br>
+              <tr class="backgroung_color">
+              <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
+              </tr>
+              <tr>
+              <td>医療</td><td>オリックス生命</td><td>新キュア・レディ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                  詳細
+                </button>
+                <div class="modal fade" id="modal1" tabindex="-1"
+                      role="dialog" aria-labelledby="label1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                              <span class="info-box-icon bg-aqua"><img src="./public/images/Accordion.png" alt="写真"  width="300" height="300"></span>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </td><td>終身</td><td>終身</td><td>4500 円（月払）</td>
+              </tr>
+              <tr>
+                  <td>がん</td><td>アフラック</td><td>がん保険Days1  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                     詳細
+                   </button>
+                   <div class="modal fade" id="modal1" tabindex="-1"
+                         role="dialog" aria-labelledby="label1" aria-hidden="true">
+                         <div class="modal-dialog modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                             <div class="modal-header">
+                             </div>
+                           </div>
+                     </div>
+                   </div>
+                 </td><td>65歳</td><td>終身</td><td>2,800  円（月払）</td>
+                 <tr>
+                    <td colspan="5"><b>合計保険料</b></td><td><b>7,300 円</b></td>
+                    </tr>
+                </tr>
+                </table>
+                  <!-- ＜一郎の保険＞ -->
+                  <table class="table table-bordered table_border_radius">
+                      <tr><b>有田 一郎さん</b>の加入保険（被保険者）</tr>
+                      <br>
+                      <tr class="backgroung_color">
+                      <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
+                      </tr>
+                  <tr>
+                  <td>医療</td><td>オリックス生命</td><td>新キュア <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                      詳細
+                    </button>
+                    <div class="modal fade" id="modal1" tabindex="-1"
+                          role="dialog" aria-labelledby="label1" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                  <span class="info-box-icon bg-aqua"><img src="./public/images/Accordion.png" alt="写真"  width="300" height="300"></span>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </td><td>終身</td><td>終身</td><td>1,800 円（月払）</td>
+                  </tr>
+                  <tr>
+                      <td colspan="5"><b>合計保険料</b></td><td><b>1,800 円</b></td>
+                   </tr>
+              
           <br>
           <br>
           <table class="table table-bordered table_border_radius">
@@ -545,6 +621,10 @@
 </body>
 </html>
 <style type="text/css">
+
+tr.bg_color{
+  background-color: honeydew;
+}
 
 tr.backgroung_color{
     background-color: antiquewhite;
