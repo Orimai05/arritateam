@@ -229,6 +229,31 @@
         <small></small>
       </h1>
     </section>
+<br>
+    <div class="col-5 ml-3" style="overflow: hidden">
+        <table class="myInfo" style="float:left">
+            <tr class="bg_color">
+                <td><b>ご契約者情報</b></td>
+              </tr>
+            <tr>
+              <th>契約者番号</th> <td colspan="2">1234567890</td>
+            </tr>    
+          <tr>
+            <th>契約者</th> <td>有田</td> <td>真澄</td>
+          </tr>
+        
+          <!-- <tr>
+            <td>被保険者</td> <td>有田</td> <td>【続柄】妻</td>
+          </tr>
+          <tr> -->
+            <td>住所</td> <td colspan="2">東京都　葛飾区　葛飾町　1-2-34</td>
+          </tr>
+          <tr>
+            <td>生年月日</td> <td colspan="2">1989年4月1日 (30歳)</td>
+          </tr>
+        </table>  
+        <img src="./public/images/arita.jpg" alt="" >
+        </div>
 
     <!-- Main content -->
     <section class="content container-fluid">
@@ -237,32 +262,34 @@
         -------------------------->
         <table class="">
             <tr class="bg_color">
-                <td><b>ご家族</b></td>
+                <td><b>ご家族構成</b></td>
               </tr>
           <tr>
               <td><img src="./public/images/man.png" alt="写真"  width="30" height="30"></td><td>有田 </td><td>真澄　</td> <td> 30歳　　</td>
-          <!-- </tr> -->
-          <!-- <tr> -->
+          </tr>
+          <tr>
               <td><img src="./public/images/women.png" alt="写真"  width="30" height="30"></td><td>有田 </td> <td>花子　</td> <td> 28歳　　</td>
-          <!-- </tr>
-          <tr> -->
+          </tr>
+          <tr>
               <td><img src="./public/images/child.png" alt="写真"  width="30" height="30"></td> <td>有田 </td> <td>一郎　</td> <td> 5歳</td>
            </tr>
         </table>  
         <br>
         <br>
-  
+       
+       
         <div>
+           <!-- <真澄さんの保険＞ -->
             <table class="table table-bordered table_border_radius">
               <tr><b>有田　真澄さん</b>の加入保険（被保険者）</tr>
               <br>
               <tr class="backgroung_color">
-              <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
+              <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>証券番号</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
               </tr>
               <tr>
-              <td>医療</td><td>オリックス生命</td><td>新キュア　<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
-                  詳細
-                </button>
+                  <td>医療</td><td>オリックス生命</td><td>新キュア　<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                      詳細
+                    </button>
                 <div class="modal fade" id="modal1" tabindex="-1"
                       role="dialog" aria-labelledby="label1" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -273,7 +300,7 @@
                         </div>
                   </div>
                 </div>
-              </td><td>終身</td><td>終身</td><td>5500 円（月払）</td>
+              </td><td>30001234</td><td>終身</td><td>終身</td><td>5500 円（月払）</td>
               </tr>
               <tr>
                <td>死亡</td><td>オリックス生命</td><td>RISE  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
@@ -288,10 +315,10 @@
                         </div>
                   </div>
                 </div>
-              </td><td>65歳</td><td>65歳払</td><td>6,800  円（月払）</td>
+              </td><td>30002234</td><td>65歳</td><td>65歳払</td><td>6,800  円（月払）</td>
                </tr>
               <tr>
-              <td>死亡</td><td>メディケア生命</td><td>メディフィット（定期）  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+              <td>死亡</td><td>メディケア生命</td><td>メディフィット（定期） <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
                   詳細
                 </button>
                 <div class="modal fade" id="modal1" tabindex="-1"
@@ -303,7 +330,7 @@
                         </div>
                   </div>
                 </div>
-              </td><td>60歳</td><td>60歳払</td><td>3,275  円（月払）</td>
+              </td><td>20771234</td><td>60歳</td><td>60歳払</td><td>3,275  円（月払）</td>
               </tr>
               <tr>
              <td>がん</td><td>アフラック</td><td>がん保険Days1  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
@@ -318,10 +345,10 @@
                       </div>
                 </div>
               </div>
-            </td><td>65歳</td><td>終身</td><td>2,800  円（月払）</td>
+            </td><td>40331234</td><td>65歳</td><td>終身</td><td>2,800  円（月払）</td>
              </tr>
              <tr>
-             <td>死亡</td><td>第一生命</td><td>ジャスト  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+             <td>死亡</td><td>第一生命</td><td>ジャスト <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
                 詳細
               </button>
               <div class="modal fade" id="modal1" tabindex="-1"
@@ -333,19 +360,64 @@
                       </div>
                 </div>
               </div>
-            </td><td>55歳</td><td>55歳払</td><td>7,600  円（月払）</td>
+            </td><td>60881234</td><td>55歳</td><td>55歳払</td><td>7,600  円（月払）</td>
              </tr>
              
               <tr>
               <td colspan="5"><b>合計保険料</b></td><td><b>25,975 円</b></td>
               </tr>
           </table>
+            <!-- <真澄さんの保障＞ -->
+            <table class="table table-bordered table_border_radius">
+                <tr><b>有田 真澄さん</b>の保障</tr>
+              </table>    
+        </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><img src="./public/images/ohaka.png" alt="写真"width="90" height="88"></span>
+      
+            <div class="info-box-content">
+              <span class="info-box-text">死亡</span>
+              <span class="info-box-number">3500 万</span>
+            </div>
+          </div>
+            </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+    
+          <div class="info-box-content">
+            <span class="info-box-text">入院（がん）</span>
+            <span class="info-box-number">10,000 円（１日）</span>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+    
+          <div class="info-box-content">
+            <span class="info-box-text">入院（病気）</span>
+            <span class="info-box-number">5,000 円（１日）</span>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-aqua"><img src="./public/images/hospital.png" alt="写真"width="90" height="88"></span>
+    
+          <div class="info-box-content">
+            <span class="info-box-text">通院</span>
+            <span class="info-box-number">5,000 円（１回）</span>
+          </div>
+         </div>
+         </div>
           <!-- <花子さんの保険＞ -->
           <table class="table table-bordered table_border_radius">
               <tr><b>有田 花子さん</b>の加入保険（被保険者）</tr>
               <br>
               <tr class="backgroung_color">
-              <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
+              <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>証券番号</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
               </tr>
               <tr>
               <td>医療</td><td>オリックス生命</td><td>新キュア・レディ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
@@ -361,12 +433,12 @@
                         </div>
                   </div>
                 </div>
-              </td><td>終身</td><td>終身</td><td>4500 円（月払）</td>
+              </td><td>30001444</td><td>終身</td><td>終身</td><td>4500 円（月払）</td>
               </tr>
               <tr>
                   <td>がん</td><td>アフラック</td><td>がん保険Days1  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
-                     詳細
-                   </button>
+                      詳細
+                    </button>
                    <div class="modal fade" id="modal1" tabindex="-1"
                          role="dialog" aria-labelledby="label1" aria-hidden="true">
                          <div class="modal-dialog modal-dialog-centered" role="document">
@@ -376,18 +448,42 @@
                            </div>
                      </div>
                    </div>
-                 </td><td>65歳</td><td>終身</td><td>2,800  円（月払）</td>
+                 </td><td>40331234</td><td>65歳</td><td>終身</td><td>2,800  円（月払）</td>
                  <tr>
                     <td colspan="5"><b>合計保険料</b></td><td><b>7,300 円</b></td>
                     </tr>
                 </tr>
-                </table>
-                  <!-- ＜一郎の保険＞ -->
-                  <table class="table table-bordered table_border_radius">
-                      <tr><b>有田 一郎さん</b>の加入保険（被保険者）</tr>
+          </table>
+
+          <!-- <花子保障＞ -->
+          <table class="table table-bordered table_border_radius">
+      <tr><b>有田　花子さん</b>の保障</tr>
+          </table>  
+          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+          <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+          <div class="info-box-content">
+            <span class="info-box-text">入院（がん）</span>
+            <span class="info-box-number">10,000 円（１日）</span>
+           </div>
+           </div>
+           </div>
+           <div class="col-md-3 col-sm-6 col-xs-12">
+           <div class="info-box">
+          <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+    
+          <div class="info-box-content">
+            <span class="info-box-text">入院（病気）</span>
+            <span class="info-box-number">5,000 円（１日）</span>
+          </div>
+           </div>
+           </div>
+          <!-- ＜一郎の保険＞ -->
+          <table class="table table-bordered table_border_radius">
+                      <tr><b>有田 花子さん</b>の加入保険（被保険者）</tr>
                       <br>
                       <tr class="backgroung_color">
-                      <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
+                      <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>証券番号</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
                       </tr>
                   <tr>
                   <td>医療</td><td>オリックス生命</td><td>新キュア <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
@@ -403,69 +499,30 @@
                             </div>
                       </div>
                     </div>
-                  </td><td>終身</td><td>終身</td><td>1,800 円（月払）</td>
+                  </td><td>30008834</td><td>終身</td><td>終身</td><td>1,800 円（月払）</td>
                   </tr>
                   <tr>
                       <td colspan="5"><b>合計保険料</b></td><td><b>1,800 円</b></td>
                    </tr>
-              
+           </table>
           <br>
           <br>
+          <!-- <一郎の保障> -->
           <table class="table table-bordered table_border_radius">
-            <tr><b>有田さん</b>の保障</tr>
-            <tr>
-            <th>保障内容</th><th>保険金（給付金）</th>
-            </tr>
-            <tr>
-              <tr><th>死亡</th><td>1500 万</td></tr>
-              <tr><th>入院（がん）</th><td>10,000 円（１日）</td></tr>        
-              <tr><th>入院（病気）</th><td>5,000 円（１日）</td></tr>         
-              <tr><th>手術</th><td>20万（1回）</td></tr>
-          </table>    
-      </div>
-  <!-- 画像 -->
-  <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+          <tr><b>有田　一郎さん</b>の保障</tr>
+          </table>  
+          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+              <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+              <div class="info-box-content">
+                <span class="info-box-text">入院（病気）</span>
+                <span class="info-box-number">5,000 円（１日）</span>
+              </div>
+            </div>
+          </div>
+  
 
-      <div class="info-box-content">
-        <span class="info-box-text">入院</span>
-        <span class="info-box-number">1,410</span>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-aqua"><img src="./public/images/ohaka.png" alt="写真"width="90" height="88"></span>
 
-      <div class="info-box-content">
-        <span class="info-box-text">死亡</span>
-        <span class="info-box-number">1,410</span>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
-
-      <div class="info-box-content">
-        <span class="info-box-text">Messages</span>
-        <span class="info-box-number">1,410</span>
-      </div>
-      <!-- /.info-box-content -->
-    </div>
-    <!-- /.info-box -->
-  </div>
-  <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
-
-      <div class="info-box-content">
-        <span class="info-box-text">Messages</span>
-        <span class="info-box-number">1,410</span>
-      </div>
-    </div>
-  </div>
 <div data-widget="tree">
     <div class="treeview">
       <a href="#" class="btn btn-success"><span>アコーディオンサンプル</span>
@@ -658,6 +715,9 @@ tr.backgroung_color{
 }
 .table_border_radius tr:last-child td {
   border-bottom: none;
+}
+.btn{
+  float: right;
 }
 /* img {
     height: 88px;

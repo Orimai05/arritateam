@@ -394,10 +394,19 @@
 </div> -->
         <!-- DONUT CHART -->
         <div class="donut">
-            <p class="death">死亡</p>
-            <p class="cancer">がん</p>
-            <p class="hospital">医療</p>
-            <canvas id="pieChart" style="height:250px"></canvas>
+            <p class="cancer_husband">医療</p>
+            <p class="death_husband">死亡</p>
+            <p class="hospital_husband">がん</p>
+            <canvas id="pieChart_husband" style="height:250px"></canvas>
+        </div>
+        <div class="donut">
+            <p class="cancer_wife">医療</p>
+            <p class="hospital_wife">がん</p>
+            <canvas id="pieChart_wife" style="height:250px"></canvas>
+        </div>
+        <div class="donut">
+            <p class="cancer_child">医療</p>
+            <canvas id="pieChart_child" style="height:250px"></canvas>
         </div>
 
   
@@ -466,32 +475,68 @@
 <script>
     $(function () {
       //-------------
-      //- PIE CHART -
+      //- husband CHART -
       //-------------
       // Get context with jQuery - using jQuery's .get() method.
-      var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+      var pieChartCanvas = $('#pieChart_husband').get(0).getContext('2d')
       var pieChart       = new Chart(pieChartCanvas)
       var PieData        = [
         {
-          value    : 500,
+          value    : 100,
           color    : '#66CCFF',
           highlight: '#66CCFF',
         },
         {
-          value    : 400,
+          value    : 300,
           color    : '#66FF66',
           highlight: '#66FF66',
         },
         {
-          value    : 300,
+          value    : 100,
           color    : '#FF9966',
           highlight: '#FF9966',
         }
       ]
       pieChart.Doughnut(PieData)
-    })
+      //-------------
+      //- wife CHART -
+      //-------------
+      // Get context with jQuery - using jQuery's .get() method.
+
+    var pieChartCanvas = $('#pieChart_wife').get(0).getContext('2d')
+      var pieChart       = new Chart(pieChartCanvas)
+      var PieData        = [
+        {
+          value    : 100,
+          color    : '#66CCFF',
+          highlight: '#66CCFF',
+        },
+        {
+          value    : 100,
+          color    : '#FF9966',
+          highlight: '#FF9966',
+        }
+      ]
+      pieChart.Doughnut(PieData)
+      //-------------
+      //- wife CHART -
+      //-------------
+      // Get context with jQuery - using jQuery's .get() method.
+
+      var pieChartCanvas = $('#pieChart_child').get(0).getContext('2d')
+      var pieChart       = new Chart(pieChartCanvas)
+      var PieData        = [
+        {
+          value    : 100,
+          color    : '#FF9966',
+          highlight: '#FF9966',
+        }
+      ]
+      pieChart.Doughnut(PieData)
+     })
+
   </script>
-""  <style type="text/css">
+  <style type="text/css">
 
 tr.backgroung_color {
     background-color: antiquewhite;
@@ -547,20 +592,38 @@ img {
   color: aliceblue;
   font-weight: bold;
   }
+/* 夫 */
+  .donut .cancer_husband {
+    position: absolute;
+    top: 40px;
+    left: 294px;
+  }
+.donut .death_husband {
+  position: absolute;
+    top: 207px;
+    left: 235px;
+}
+.donut .hospital_husband {
+    position: absolute;
+    top: 35px;
+    left: 184px;
+}
+/* 妻 */
+.donut .cancer_wife {
+    position: absolute;
+    top: 40px;
+    left: 294px;
+  }
+.donut .hospital_wife {
+    position: absolute;
+    top: 35px;
+    left: 184px;
+}
+/* 子供 */
+.donut .cancer_child {
+    position: absolute;
+    top: 40px;
+    left: 294px;
+  }
 
-  .donut .death {
-    position: absolute;
-    top: 56px;
-    left: 310px;
-}
-.donut .cancer {
-    position: absolute;
-    top: 200px;
-    left: 224px;
-}
-.donut .hospital {
-    position: absolute;
-    top: 34px;
-    left: 195px;
-}
 </style>
