@@ -395,9 +395,8 @@
         <!-- DONUT CHART -->
         <div class="donut">
             <p class="death">死亡</p>
-            <p class="cancer">入院（がん）</p>
-            <p class="sick">入院（病気）</p>
-            <p class="hospital">通院</p>
+            <p class="cancer">がん</p>
+            <p class="hospital">医療</p>
             <canvas id="pieChart" style="height:250px"></canvas>
         </div>
 
@@ -474,28 +473,19 @@
       var pieChart       = new Chart(pieChartCanvas)
       var PieData        = [
         {
-          value    : 700,
-          color    : '#f56954',
-          highlight: '#f56954',
-          label    : 'Chrome'
-        },
-        {
           value    : 500,
-          color    : '#00a65a',
-          highlight: '#00a65a',
-          label    : 'IE'
+          color    : '#66CCFF',
+          highlight: '#66CCFF',
         },
         {
           value    : 400,
-          color    : '#f39c12',
-          highlight: '#f39c12',
-          label    : 'FireFox'
+          color    : '#66FF66',
+          highlight: '#66FF66',
         },
         {
           value    : 300,
-          color    : '#d2d6de',
-          highlight: '#d2d6de',
-          label    : 'Navigator'
+          color    : '#FF9966',
+          highlight: '#FF9966',
         }
       ]
       pieChart.Doughnut(PieData)
@@ -567,11 +557,6 @@ img {
     position: absolute;
     top: 200px;
     left: 224px;
-}
-.donut .sick {
-    position: absolute;
-    top: 128px;
-    left: 109px;
 }
 .donut .hospital {
     position: absolute;
