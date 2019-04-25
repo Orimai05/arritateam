@@ -57,16 +57,16 @@ div.section a.BtnNo { text-decoration:none; /* IE8 */}
 div.section .pagination a { text-decoration:none; /* IE8 */}
 
 dd a { text-decoration:underline; }
-.arrow01 { background:url(/mypage/images/icon/icon_016.png) no-repeat 0 center; padding-left:15px; }
-.arrow01top { background:url(/mypage/images/icon/icon_016.png) no-repeat 0 top; background-position-y:13px;}
-.arrow02 { background:url(/mypage/images/icon/icon_016_2.png) no-repeat 0 center; padding-left:15px; }
-.page_top { background:url(/mypage/images/icon/icon_044.png) no-repeat 0 center; padding-left:15px; }
-.page_bottom { background:url(/mypage/images/icon/icon_041.png) no-repeat 0 center; padding-left:15px; }
-.accordion_open { background:url(/mypage/images/icon/icon_045.png) no-repeat 0 center; padding-left:15px; }
-.accordion_close { background:url(/mypage/images/icon/icon_046.png) no-repeat 0 center; padding-left:15px; }
-.error_icon { background:url(/mypage/images/icon/icon_042.png) no-repeat 1px 4px; padding-left:20px; }
-.error_icon_notice { background:url(/mypage/images/icon/icon_042.png) no-repeat 0% 30%; padding-left:20px; }
-.warning_icon { background:url(/mypage/images/icon/icon_025.png) no-repeat 1px 4px; padding-left:20px; }
+.arrow01 { padding-left:15px; }
+.arrow01top { background-position-y:13px;}
+.arrow02 {  padding-left:15px; }
+.page_top {  padding-left:15px; }
+.page_bottom {  padding-left:15px; }
+.accordion_open {  padding-left:15px; }
+.accordion_close {  padding-left:15px; }
+.error_icon {  padding-left:20px; }
+.error_icon_notice {  }
+.warning_icon {  padding-left:20px; }
 .line01 {
  border-bottom:1px #538AC7;
  display:inline-block;
@@ -116,7 +116,7 @@ footer div p { text-align:right; clear:both; font-size:12px; padding-top:10px; m
 
 
 /* Main Frame */
-#Wrapper { 	background:#E0ECFA url(/mypage/images/bg/bg_004.png) repeat-x 0 0;
+#Wrapper { 
 padding-top: 30px; text-align:center; }
 .container { margin:0 auto; width:970px; }
 
