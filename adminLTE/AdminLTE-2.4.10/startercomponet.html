@@ -249,18 +249,28 @@
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-        <table class="">
+        <div class="col-5 ml-3" style="overflow: hidden">
+        <table class="myInfo" style="float:left">
+            <tr>
+              <th>契約者番号</th> <td colspan="2">1234567890</td>
+            </tr>    
           <tr>
-            <td>契約者</td> <td>有田</td> <td>夫</td>
+            <th>契約者</th> <td>有田</td> <td>【続柄】夫</td>
           </tr>
         
           <tr>
-            <td>被保険者</td> <td>有田</td> <td>妻</td>
+            <td>被保険者</td> <td>有田</td> <td>【続柄】妻</td>
+          </tr>
+          <tr>
+            <td>住所</td> <td colspan="2">東京都　葛飾区　〇〇　１－２－３４</td>
+          </tr>
+          <tr>
+            <td>生年月日</td> <td colspan="2">令和1年１月１日</td>
           </tr>
         </table>  
-        <br>
-        <br>
-  
+        <img src="./public/images/arita.jpg" alt="" >
+        </div>
+
         <div>
           <table class="table table-bordered table_border_radius">
               <tr>あなたの加入保険</tr>
@@ -826,5 +836,17 @@ tr.backgroung_color {
 }
 img {
     height: 88px;
+}
+.myInfo{
+  border-collapse:collapse;
+}
+
+.myInfo td,th{
+  border-top:1px solid #666;
+  padding:5px;
+}
+.myInfo tr:last-child td,
+.myInfo tr:last-child th{
+  border-bottom:1px solid #666;  
 }
 </style>
