@@ -18,7 +18,7 @@ function goNext(page){
 			location.href= './register_complete.html';
 			break;
 		case 'contents' :
-			location.href= './contents.html';
+			location.href= './content.html';
 			break;
 		deafult :
 			break;
