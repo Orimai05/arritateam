@@ -25,6 +25,14 @@
 
 <body>
 
+<div id="loading" data-bind="visible: false" style="display: none;">
+	<div class="contents" style="text-align: center;">
+		<img src="./public/images/loading.gif" alt="" width="24" height="24"><br>
+		しばらくお待ちください…
+	</div>
+</div>
+
+
 <div id="wrap"  style="" class="double-submit">
 
 <header>
@@ -86,7 +94,7 @@
 	</div>
 
 	<div class="check bg_orange rd21" style="background-color:aliceblue;">
-		<a href="./home.html" class="btn btn-warning btn-lg wd30p" tabindex="3" style="background-color:#3c8dbc; border-color:#3c8dbc;">ログイン</a>
+		<a href="javascript:void(0);" onclick="dispLoading(); setTimeout(function(){goNext('home')},1000);" class="btn btn-warning btn-lg wd30p" tabindex="3" style="background-color:#3c8dbc; border-color:#3c8dbc;">ログイン</a>
 	</div>
 
 </form>
@@ -111,5 +119,6 @@
 <script type="text/javascript" src="./public/js/jquery.plainoverlay.js"></script>
 <script type="text/javascript" src="./public/js/native.history.js"></script>
 <script type="text/javascript" src="./public/js/jquery-supertextconverter-plugin.js"></script>
+<script type="text/javascript" src="./public/js/common.js"></script>
 
 

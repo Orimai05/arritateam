@@ -23,6 +23,14 @@
 
 <body>
 
+<div id="loading" data-bind="visible: false" style="display: none;">
+	<div class="contents" style="text-align: center;">
+		<img src="./public/images/loading.gif" alt="" width="24" height="24"><br>
+		しばらくお待ちください…
+	</div>
+</div>
+
+
 <div id="wrap" style="" class="double-submit">
 
 
@@ -58,11 +66,11 @@
 		<tbody>
 			<tr>
 			<td>
-				<h5><p class="padtb10 padl15 arrow01top text_large bld"><a href="./register.html" >契約商品のご登録</a></p></h5>
+				<h5><p class="padtb10 padl15 arrow01top text_large bld"><a href="javascript:void(0);" onclick="dispLoading(); setTimeout(function(){goNext('register')},1000);">契約商品のご登録</a></p></h5>
 				<p style="padding-left:20px;">お手持ちの契約商品をこちらからご登録ください。</p>
 			</td>
 			<td>
-				<h5><p class="padtb10 padl15 arrow01top text_large bld"><a href="./starter.html" >契約商品のご確認</a></p></h5>
+				<h5><p class="padtb10 padl15 arrow01top text_large bld"><a href="javascript:void(0);" onclick="dispLoading(); setTimeout(function(){goNext('contents')},1000);">契約商品のご確認</a></p></h5>
 				<p style="padding-left:20px;">お手持ちのすべての契約商品をまとめてご確認できます。</p>
 			</td>
 			</tr>
@@ -156,6 +164,7 @@
 <script type="text/javascript" src="./public/js/native.history.js"></script>
 <script type="text/javascript" src="./public/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./public/js/jquery-supertextconverter-plugin.js"></script>
+<script type="text/javascript" src="./public/js/common.js"></script>
 
 
 

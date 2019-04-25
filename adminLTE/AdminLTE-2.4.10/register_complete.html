@@ -24,6 +24,13 @@
 
 <body>
 
+<div id="loading" data-bind="visible: false" style="display: none;">
+	<div class="contents" style="text-align: center;">
+		<img src="./public/images/loading.gif" alt="" width="24" height="24"><br>
+		しばらくお待ちください…
+	</div>
+</div>
+
 <div id="wrap" style="" class="double-submit">
 
 <header>
@@ -52,7 +59,7 @@
 	</div>
 	<div id="btn" class="bg_orange rd30 clearfl double-submit" style="background-color:aliceblue;">
 		<div class="btn_center wd50p" >
-			<a href="./home.html" class="BtnNext" style="background-color:#3c8dbc; border-color:#3c8dbc;">マイページホームに戻る</a>
+			<a href="javascript:void(0);" onclick="dispLoading(); setTimeout(function(){goNext('home')},1000);" class="BtnNext" style="background-color:#3c8dbc; border-color:#3c8dbc;">マイページホームに戻る</a>
 		</div>
 	</div>
 </div>
@@ -71,5 +78,6 @@
 <script type="text/javascript" src="./public/js/native.history.js"></script>
 <script type="text/javascript" src="./public/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./public/js/jquery-supertextconverter-plugin.js"></script>
+<script type="text/javascript" src="./public/js/common.js"></script>
 
 
