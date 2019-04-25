@@ -393,7 +393,13 @@
   </div>
 </div> -->
         <!-- DONUT CHART -->
+        <div class="donut">
+            <p class="death">死亡</p>
+            <p class="cancer">入院（がん）</p>
+            <p class="sick">入院（病気）</p>
+            <p class="hospital">通院</p>
             <canvas id="pieChart" style="height:250px"></canvas>
+        </div>
 
   
     </section>
@@ -486,18 +492,6 @@
           label    : 'FireFox'
         },
         {
-          value    : 600,
-          color    : '#00c0ef',
-          highlight: '#00c0ef',
-          label    : 'Safari'
-        },
-        {
-          value    : 100,
-          color    : '#3c8dbc',
-          highlight: '#3c8dbc',
-          label    : 'Opera'
-        },
-        {
           value    : 300,
           color    : '#d2d6de',
           highlight: '#d2d6de',
@@ -507,7 +501,7 @@
       pieChart.Doughnut(PieData)
     })
   </script>
-  <style type="text/css">
+""  <style type="text/css">
 
 tr.backgroung_color {
     background-color: antiquewhite;
@@ -556,5 +550,32 @@ img {
 .myInfo tr:last-child td,
 .myInfo tr:last-child th{
   border-bottom:1px solid #666;  
+}
+
+.donut {/*親div*/
+  position: relative;/*相対配置*/
+  color: aliceblue;
+  font-weight: bold;
+  }
+
+  .donut .death {
+    position: absolute;
+    top: 56px;
+    left: 310px;
+}
+.donut .cancer {
+    position: absolute;
+    top: 200px;
+    left: 224px;
+}
+.donut .sick {
+    position: absolute;
+    top: 128px;
+    left: 109px;
+}
+.donut .hospital {
+    position: absolute;
+    top: 34px;
+    left: 195px;
 }
 </style>
