@@ -14,8 +14,9 @@
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./public/images/ariita.ico">
 
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+<body>
+  <!-- <body class="hold-transition sidebar-mini"> -->
+        <div class="wrapper">
   <!-- Main Header -->
   <header class="main-header">
     <!-- Logo -->
@@ -166,63 +167,11 @@
       </div>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>保険商品登録</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>保険商品参照</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>保険見直し</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">ポートフォリオ簡単ナビ</a></li>
-            <li><a href="#">FP診断（有料会員のみ）</a></li>
-          </ul>
-          <li class="treeview">
-              <a href="#"><i class="fa fa-link"></i> <span>一括手続き</span>
-                <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                  </span>
-              </a>
-              <ul class="treeview-menu">
-                  <li><a href="#">保険料シミュレーション</a></li>
-                  <li><a href="#">資料請求</a></li>
-                  <li><a href="#">保全手続き</a></li>
-              </ul>
-        </li>
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>ご家族登録</span></a></li>
-      </ul>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
   <!-- ここから -->
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="">
     <!-- Content Header (Page header) -->
-    <div class="pagecontent_width">
+    <div id="Contents" style="background-color:#ecf0f5;">
       <section class="content-header">
         <h1>保険商品参照</h1>
       </section>
@@ -254,7 +203,7 @@
         -------------------------->
         <!-- <真澄さんの保険＞ -->
         <div>
-            <h2><img src="./public/images/man.png" alt="写真"  width="30" height="30" class="family_picture"><b>有田 真澄さん</b> 30歳　の加入保険（被保険者）　</h2>
+            <h3><img src="./public/images/man.png" alt="写真"  width="30" height="30" class="family_picture"><b>有田 真澄さん</b> 30歳　の加入保険（被保険者）　</h3>
           <table class="table table-bordered table_border_radius">
             <tr class="backgroung_color">
             <th>保険タイプ</th><th>保険会社</th><th>保険名</th><th>証券番号</th><th>払込期間</th><th>保険期間</th><th>保険料</th>
@@ -340,7 +289,7 @@
         </table>
         <!-- <真澄さんの保障＞ -->
         <div class="type">
-          <h3 class="Contents">保険タイプ</h2>
+          <h4 class="Contents">保険タイプ</h2>
           <!-- DONUT CHART -->
           <div class="donut">
             <p class="cancer_husband">医療</p>
@@ -348,9 +297,10 @@
             <p class="hospital_husband">がん</p>
             <canvas id="pieChart_husband" style="height:250px"></canvas>
           </div>
+          <div class="type_box">
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-aqua"><img src="./public/images/ohaka.png" alt="写真"width="90" height="88"></span>
+                <span class="info-box-icon green"><img class="irasutoya" src="./public/images/ohaka.png" alt="写真"width="90" height="88"></span>
                 <div class="info-box-content">
                   <span class="info-box-text">死亡</span>
                   <span class="info-box-number">3500 万</span>
@@ -358,35 +308,36 @@
               </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
-              <div class="info-box-content">
-                <span class="info-box-text">入院（がん）</span>
-                <span class="info-box-number">10,000 円（１日）</span>
+              <div class="info-box">
+                <span class="info-box-icon red"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">入院（がん）</span>
+                  <span class="info-box-number">10,000 円（１日）</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
-              <div class="info-box-content">
-                <span class="info-box-text">入院（病気）</span>
-                <span class="info-box-number">5,000 円（１日）</span>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-aqua"><img src="./public/images/tuuin.png" alt="写真" width="90" height="88"></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">入院（病気）</span>
+                  <span class="info-box-number">5,000 円（１日）</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-aqua"><img src="./public/images/hospital.png" alt="写真"width="90" height="88"></span>
-              <div class="info-box-content">
-                <span class="info-box-text">通院</span>
-                <span class="info-box-number">5,000 円（１回）</span>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-aqua"><img src="./public/images/hospital.png" alt="写真"width="90" height="88"></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">通院</span>
+                  <span class="info-box-number">5,000 円（１回）</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
           <!-- <花子さんの保険＞ -->
-          <h3><img src="./public/images/women.png" alt="写真"  width="30" height="30" class="family_picture"><b></b>有田 花子さん</b>の加入保険（被保険者）</h3>
+          <h3><img src="./public/images/women.png" alt="写真"  width="30" height="30" class="family_picture"><b>有田 花子さん</b>の加入保険（被保険者）</h3>
 
           <table class="table table-bordered table_border_radius">
               <tr class="backgroung_color">
@@ -428,7 +379,7 @@
           </table>
           <div class="type">
             <!-- <花子保障＞ -->
-            <h3  class="Contents">保険タイプ</h3>
+            <h4  class="Contents">保険タイプ</h3>
             <div class="donut">
                 <p class="cancer_wife">医療</p>
                 <p class="hospital_wife">がん</p>
@@ -455,7 +406,7 @@
            </div>
         </div>
           <!-- ＜一郎の保険＞ -->
-          <h2><img src="./public/images/child.png" alt="写真"  width="30" height="30" class="family_picture"><b>有田 一郎さん</b>の加入保険（被保険者）</h2>
+          <h3><img src="./public/images/child.png" alt="写真"  width="30" height="30" class="family_picture"><b>有田 一郎さん</b>の加入保険（被保険者）</h3>
           <table class="table table-bordered table_border_radius">
                       <br>
                       <tr class="backgroung_color">
@@ -483,7 +434,7 @@
            </table>
           <!-- <一郎の保障> -->
           <div class="type">
-          <h3  class="Contents">保険タイプ</h3>
+          <h4 class="Contents">保険タイプ</h3>
           <div class="donut">
               <p class="cancer_child">医療</p>
               <canvas id="pieChart_child" style="height:250px"></canvas>
@@ -666,6 +617,10 @@
 
 <style type="text/css">
 
+body{
+  background-color: #3c8dbc;
+}
+
 .skin-blue .main-header .navbar {
     background-color: white;
     height: 112px;
@@ -679,6 +634,7 @@
 }
 .pagecontent_width {
     padding: 10px 70px;
+
 }
 .col-5.ml-3 {
     margin: 25px 0px;
@@ -694,7 +650,7 @@ tr.backgroung_color {
       background-color: antiquewhite;
   }
   .ariite_logo {
-    padding: 25px;
+    padding: 25px 102px;
     height: 90px;
 }
 
@@ -727,7 +683,7 @@ tr.backgroung_color {
     transition: transform .3s ease-in-out,width .3s ease-in-out;
 }
 .main-header {
-    background: linear-gradient(white 71px, #3c8dbc);
+    background:white;
 }
 .content-header {
     padding: 35px 0px 0 0px;
@@ -825,3 +781,89 @@ tr.backgroung_color {
       top: 40px;
       left: 294px;
     }
+    h1 {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 28px;
+    padding: 12px 0 10px 20px;
+    margin-top: 18px;
+    margin-left: 40px;
+    background-color: #3282DC;
+    line-height: 1.2em;
+    font-weight: bold;
+    border-radius: 23px;
+    width: 250px;
+}
+
+h3 {
+    /* position: relative; */
+    color: #FFFFFF;
+    /* font-size: 28px; */
+    padding: 5px 0 0px 25px;
+    /* margin-top: 18px; */
+    /* margin-left: 40px; */
+    background-color: #3282DC;
+    line-height: 1.2em;
+    font-weight: bold;
+    width: 589px;
+    border-radius: 20px;
+}
+.col-md-3 {
+    width: 49%;
+}
+
+.type_box {
+    overflow: hidden;
+}
+.col-md-3 {
+    width: 100%;
+}
+.green{
+background-color: #66FF66;
+}
+.red{
+  background-color: #FF9966; 
+}
+.info-box-icon {
+    /* border-top-left-radius: 2px; */
+    /* border-top-right-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+    /* border-bottom-left-radius: 2px; */
+    /* display: block; */
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    /* font-size: 45px; */
+    line-height: 85px;
+    border-radius: 23px;
+    top: -18px;
+    margin: -11px;
+}
+.info-box {
+    display: block;
+    min-height: 72px;
+    background: #fff;
+    width: 100%;
+    border-radius: 35px;
+    margin: 13px 0px;
+}
+.info-box-icon>img {
+    max-width: 93%;
+}
+.info-box-icon>img {
+    max-width: 80%;
+    max-height: 85%;
+}
+#Contents {
+    clear: both;
+    border-radius: 36px;
+    box-shadow: 0 0 5px #999999;
+    background: url(/mypage/images/bg/bg_001.png) repeat-y 0 0;
+    background: #FFF;
+    padding: 50px 60px;
+    margin: 40px 90px 40px;
+    line-height: 1.8;
+    position: relative;
+}
+</style>
